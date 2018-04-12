@@ -1,0 +1,94 @@
+.topo-pagina.contato {
+  background: url('../imagens/fundo-contato.jpg') center center no-repeat;
+}
+
+.conteudo-contato {
+	position: relative;
+  padding: 80px 0;
+}
+.conteudo-contato:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: 50%;
+	height: 100%;
+	left: 50%;
+	top: 0;
+	background: black;
+}
+.conteudo-contato .container {
+	display: flex;
+}
+.info-contato {
+	flex: 1;
+	padding: 0 60px;
+}
+.info-contato .box-info {
+	margin: 0 0 50px;
+}
+.titulo-contato {
+	font-size: 25px;
+	margin: 0 0 20px;
+}
+.info-contato .info-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.info-contato .info-icone {
+	width: 30px;
+	text-align: center;
+}
+.info-contato .info-descricao {
+	font-size: 17px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.formulario-contato {
+	flex: 1;
+	padding: 0 60px;
+}
+.formulario-contato .titulo-contato {
+	color: white;
+}
+.formulario-contato label {
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	margin: 0 0 10px;
+}
+.formulario-contato input,
+.formulario-contato textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid white;
+	display: block;
+	width: 100%;
+	padding: 20px;
+	margin: 0 0 20px;
+	color: white;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	outline: none;
+}
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+	background: var(--amarelo);
+	color: black;
+}
+.formulario-botao {
+	text-align: right;
+}
+
+.formulario-contato #feedback {
+	display: none;
+	clear: both;
+	background: var(--amarelo);
+	color: black;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+	width: 100%;
+}

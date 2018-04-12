@@ -1,0 +1,243 @@
+:root {
+  --amarelo: #ffc602;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* Topo */
+.topo {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  padding: 15px 0;
+}
+.topo .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topo .logo {
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  float: left;
+  margin: 0;
+}
+.topo .logo a {
+  color: white;
+  text-decoration: none;
+}
+.topo .logo span {
+  color: var(--amarelo);
+}
+.topo .logo small {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: block;
+  text-align: right;
+  margin-top: -5px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.menu ul li {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 20px;
+}
+.menu ul li a:hover,
+.menu ul li.ativo a {
+  color: var(--amarelo);
+}
+
+/* Topo de página */
+.topo-pagina {
+  width: 100%;
+  height: 550px;
+  background: black;
+}
+.topo-pagina .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-top: 90px;
+}
+.topo-pagina .conteudo {
+  width: 50%;
+  color: white;
+}
+.topo-pagina .titulo1 {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--amarelo);
+  margin: 0;
+}
+.topo-pagina .titulo2 {
+  font-size: 120px;
+  margin: -10px 0 30px;
+  color: var(--amarelo);
+}
+.topo-pagina .descricao {
+  font-size: 15px;
+  line-height: 30px;
+  color: #cccccc;
+}
+
+
+/* Botões */
+.botao-branco {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--amarelo);
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.botao-branco:hover {
+  border-color: var(--amarelo);
+  color: white;
+}
+
+.botao-amarelo {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background: var(--amarelo);
+  border: 2px solid var(--amarelo);
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.botao-amarelo:hover {
+  color: var(--amarelo);
+  background: transparent;
+}
+
+.botao-preto {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.botao-preto:hover {
+  color: white;
+  background: black;
+}
+
+
+/* Rodapé */
+.rodape {
+  background: black;
+  padding-top: 80px;
+}
+.rodape .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rodape .logo {
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  float: left;
+}
+.rodape .logo span {
+  color: var(--amarelo);
+}
+.rodape .logo small {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: block;
+  text-align: right;
+  margin-top: -5px;
+}
+.rodape .cadastro {
+  display: flex;
+  align-items: center;
+}
+.rodape .cadastro label {
+  font-size: 14px;
+  color: white;
+  margin-right: 15px;
+}
+.rodape .cadastro .campo {
+  display: flex;
+}
+.rodape .cadastro input {
+  width: 250px;
+  border: 0;
+  padding: 15px;
+  background: var(--amarelo);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+.rodape .cadastro input::placeholder {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+.rodape .cadastro .enviar {
+  border: 0;
+  background: white;
+  width: 53px;
+  cursor: pointer;
+}
+.rodape .creditos {
+  margin-top: 50px;
+}
+.rodape .creditos .container {
+  border-top: 1px solid #444;
+  padding: 40px 0;
+  justify-content: center;
+}
+.rodape .creditos .descricao {
+  color: white;
+  font-size: 14px;
+}
+.rodape .creditos .descricao span {
+  color: var(--amarelo);
+}
